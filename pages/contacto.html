@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Contacto</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Formulario de Contacto</legend>
+          <div>
+            <div>
+              <label for="name">Nombre:</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                maxlength="40"
+                pattern="[\p{L}0-9]+"
+                required
+                autofocus
+                placeholder="Nombre"
+              />
+            </div>
+
+            <div>
+              <label for="email">Email:</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                placeholder="example@example.com"
+              />
+            </div>
+
+            <div>
+              <label for="age">Edad:</label>
+              <input
+                id="age"
+                name="age"
+                type="number"
+                min="18"
+                max="99"
+                required
+                placeholder="18"
+              />
+            </div>
+
+            <div>
+              <label for="phone">Telefono:</label>
+              <input id="phone" name="phone" type="tel" required placeholder="123456789" />
+            </div>
+
+            <div>
+                <label for="message">Consulta:</label>
+                <textarea id="message" name="message" rows="5" cols="50" required placeholder="Mensaje a enviar..."></textarea>
+            </div>
+
+            <div>
+                <input id="privacityAndCookies" name="privacityAndCookies" type="checkbox" required />
+                <label for="privacityAndCookies">Acepto la
+                    <a href="https://www.termsfeed.com/live/abd02ba2-a43a-4061-9faf-4f3a8868f134">política de privacidad y cookies</a>
+                </label>
+            </div>
+          </div>
+          <button type="submit" name="submit">Enviar</button>
+        </fieldset>
+      </form>
+
+      <section id="contact-data">
+        <h2>Datos de Contacto</h2>
+        <p>
+          Si lo prefieres, puedes comunicarte directamente con nosotros a través
+          de nuestros canales oficiales:
+        </p>
+        <ul>
+          <li><strong>Dirección:</strong> 2 Pl. de la Fuente, Ayora, España</li>
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:soporte@ensigna.com">soporte@ensigna.com</a>
+          </li>
+          <li>
+            <strong>Teléfono:</strong> <a href="tel:+34164927491">164927491</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
