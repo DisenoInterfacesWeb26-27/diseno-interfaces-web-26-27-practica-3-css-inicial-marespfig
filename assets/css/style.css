@@ -190,9 +190,7 @@ legend {
     font-weight: bold;
 }
 
-fieldset > div > div {
-    margin-bottom: 1em;
-}
+fieldset > div > div { margin-bottom: 1em; }
 
 label {
     display: inline-block;
@@ -208,13 +206,7 @@ textarea {
     font-family: var(--font-text);
 }
 
-input[type="checkbox"] {
-    margin-right: 0.4em;
-}
-
-textarea {
-    resize: vertical;
-}
+input[type="checkbox"] { margin-right: 0.4em; }
 
 button {
     padding: 0.7em 1.5em;
@@ -226,9 +218,7 @@ button {
     font-weight: bold;
 }
 
-button:hover {
-    background-color: var(--hover-color);
-}
+button:hover { background-color: var(--hover-color); }
 
 /* Footer */
 footer {
@@ -289,6 +279,4 @@ footer .socials a.whatssapp:hover {
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-footer .socials a.whatssapp:active {
-    background-color: var(--secondary-color);
-}
+footer .socials a.whatssapp:active { background-color: var(--secondary-color); }
