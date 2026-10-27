@@ -1,6 +1,4 @@
-* { 
-    margin: 0;
- }
+* {  margin: 0; }
 
 html { font-size: 100%; }
 
@@ -47,9 +45,9 @@ h1, h2, h3, caption {
     margin-bottom: .5em;
 }
 
-h1 { font-size: var(--64pixels-size);}
-h2, caption { font-size: var(--32pixels-size);}
-h3 { font-size: var(--24pixels-size);}
+h1 { font-size: var(--64pixels-size); }
+h2 { font-size: var(--32pixels-size); }
+h3, caption { font-size: var(--24pixels-size); }
 
 p, small, nav, a, button, input, textarea, label, li { 
     font-family: var(--font-text);
@@ -105,7 +103,7 @@ main {
     min-height: 40vh;
 }
 
-section, article { margin-bottom: 2em;}
+section, article { margin-bottom: 2em; }
 article p { text-align: justify; }
 
 /* Aside */
@@ -139,6 +137,39 @@ aside ul li a {
     border-radius: 4px;
 
     &:hover { color: var(--hover-color)}
+}
+
+/* Services */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+    table-layout: auto;
+    border: 2px solid var(--secondary-color);
+}
+
+table th, table td {
+    border: 1px solid var(--secondary-color);
+    padding: 1em;
+    text-align: center;
+    vertical-align: middle;
+    overflow-wrap: break-word;
+}
+
+table th {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+table tbody tr:nth-child(odd) { background-color: var(--main-color);}
+table tbody tr:nth-child(even) { background-color: var(--secondary-color);}
+table tr:first-child { background-color: var(--main-color);}
+
+table caption {
+    caption-side: bottom;
+    padding: 1em;
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
 /* Contact Form */
