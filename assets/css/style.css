@@ -140,3 +140,66 @@ aside ul li a {
 
     &:hover { color: var(--hover-color)}
 }
+
+/* Footer */
+footer {
+    padding: 2em;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    font-family: var(--font-text);
+}
+
+footer iframe {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    margin: 1.5em auto;
+}
+
+footer img { vertical-align: middle; }
+
+footer span {
+    display: block;
+    margin-top: .5em;
+}
+
+footer small {
+    display: block;
+    margin-top: 1em;
+}
+
+/* Footer Whatssap Link Sticky */
+footer .socials a.whatssapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+    margin: 0;
+
+    background-color: var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+footer .socials a.whatssapp img {
+    width: 36px;
+    height: 36px;
+}
+
+footer .socials a.whatssapp:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.08);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+footer .socials a.whatssapp:active {
+    background-color: var(--secondary-color);
+}
