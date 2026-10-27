@@ -25,10 +25,10 @@ html { font-size: 100%; }
     --hover-color: #6585D0;
     --btn-pressed-color: #2F5597;
 
-    --64pixels-size: 4em;
-    --32pixels-size: 2em;
-    --24pixels-size: 1.5em;
-    --16pixels-base-size: 1em;
+    --pixels64-size: 4em;
+    --pixels32-size: 2em;
+    --pixels24-size: 1.5em;
+    --pixels16-base-size: 1em;
 }
 
 /* GENERAL STYLES */
@@ -45,13 +45,13 @@ h1, h2, h3, caption {
     margin-bottom: .5em;
 }
 
-h1 { font-size: var(--64pixels-size); }
-h2 { font-size: var(--32pixels-size); }
-h3, caption { font-size: var(--24pixels-size); }
+h1 { font-size: var(--pixels64-size); }
+h2 { font-size: var(--pixels32-size); }
+h3, caption { font-size: var(--pixels24-size); }
 
 p, small, nav, a, button, input, textarea, label, li { 
     font-family: var(--font-text);
-    font-size: var(--16pixels-base-size);
+    font-size: var(--pixels16-base-size);
 }
 
 p { margin-bottom: 1em; }
