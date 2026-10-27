@@ -1,0 +1,142 @@
+* { 
+    margin: 0;
+ }
+
+html { font-size: 100%; }
+
+@font-face {
+    font-family: "Forum";
+    src: url("../webfonts/Forum-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../webfonts/Poppins-Regular.ttf);
+}
+
+/* VARIABLES */
+
+:root {
+    --font-titles: "Forum", serif;
+    --font-text: "Poppins", sans-serif;
+
+    --main-bg: #FFFFFF;
+    --main-color: #7E9DE4;
+    --secondary-color: #2F5597;
+    --text-color: #212529;
+    --hover-color: #6585D0;
+    --btn-pressed-color: #2F5597;
+
+    --64pixels-size: 4em;
+    --32pixels-size: 2em;
+    --24pixels-size: 1.5em;
+    --16pixels-base-size: 1em;
+}
+
+/* GENERAL STYLES */
+
+body {
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    font-family: var(--font-text);
+}
+
+h1, h2, h3, caption { 
+    font-family: var(--font-titles);
+    color: var(--main-color);
+    margin-bottom: .5em;
+}
+
+h1 { font-size: var(--64pixels-size);}
+h2, caption { font-size: var(--32pixels-size);}
+h3 { font-size: var(--24pixels-size);}
+
+p, small, nav, a, button, input, textarea, label, li { 
+    font-family: var(--font-text);
+    font-size: var(--16pixels-base-size);
+}
+
+p { margin-bottom: 1em; }
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    font-family: var(--font-text);
+
+    & h1 { margin: 0 !important; }
+}
+
+/* Navegation */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--secondary-color);
+    padding: .5em 1em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .75em;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.7em 1.5em;
+    border-radius: 6px;
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2em auto;
+    min-height: 40vh;
+}
+
+section, article { margin-bottom: 2em;}
+article p { text-align: justify; }
+
+/* Aside */
+aside {
+    margin-top: 2em;
+    padding: 1.5em;
+    background-color: var(--main-bg);
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 6px;
+}
+
+aside h2 {
+    color: var(--main-color);
+    margin-bottom: 0.75em;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+aside ul li {
+    margin-bottom: 0.5em;
+}
+
+aside ul li a {
+    display: block;
+    padding: 0.6em;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 4px;
+
+    &:hover { color: var(--hover-color)}
+}
