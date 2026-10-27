@@ -141,6 +141,64 @@ aside ul li a {
     &:hover { color: var(--hover-color)}
 }
 
+/* Contact Form */
+form {
+    max-width: 700px;
+    margin: 0 auto 2em;
+}
+
+fieldset {
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    padding: 1.5em;
+}
+
+legend {
+    padding: 0 0.5em;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+fieldset > div > div {
+    margin-bottom: 1em;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.3em;
+}
+
+input:not([type="checkbox"]),
+textarea {
+    width: 100%;
+    padding: 0.7em;
+    border: 1px solid #AAB8D4;
+    border-radius: 4px;
+    font-family: var(--font-text);
+}
+
+input[type="checkbox"] {
+    margin-right: 0.4em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
 /* Footer */
 footer {
     padding: 2em;
